@@ -91,7 +91,7 @@
 
     <div class="table-hobi">
         <div class="container">
-            <div class="table-responsive">
+            <table class="table-responsive">
                 <tr>
                     <th>No</th>
                     <th>Hobi</th>
@@ -102,10 +102,80 @@
                     <td>Bersepedah</td>
                     <td>Batagor</td>
                 </tr>
-            </div>
+                <tr>
+                    <td>2</td>
+                    <td>Bersepedah</td>
+                    <td>Batagor</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Bersepedah</td>
+                    <td>Batagor</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bersepedah</td>
+                    <td>Batagor</td>
+                </tr>
+            </table>
         </div>
     </div>
 
+    <div class="form-kontak">
+        <div class="container">
+            <h2>Get Connection</h2>
+            <form>
+                <div class="isi-form">
+                    <label for="nama">Nama:</label><br>
+                    <input type="text" id="nama" name="nama" placeholder="Isikan dengan nama lengkap">
+                </div>
+                <div class="isi-form">
+                    <label for="nama">Email:</label><br>
+                    <input type="text" id="email" name="email" placeholder="Email perusahaan">
+                </div>
+                <div class="isi-form">
+                    <label for="nama">Company:</label><br>
+                    <input type="text" id="company" name="company"><br>
+                </div>
+                <div class="isi-form">
+                    <label for="jadwal-meeting">Pilih jadwl meeting:</label><br>
+                    <input type="date" id="jadwal-meeting" name="jadwal-meeting"><br>
+                </div>
+                <div class="isi-form">
+                    <label for="jenis-meeting">Pilih Jenis meeting</label><br>
+                    <select name="jenis-meeting" id="jenis-meeting">
+                        <option value="online">online</option>
+                        <option value="offline">offline</option>
+                    </select>
+                </div>
+                <div class="isi-form">
+                    <label for="pesan">pesan</label><br>
+                    <textarea id="pesan" name="pesan" style="width: 100%;"></textarea>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="bpemrograman1">HTML</label><br>
+                    <input type="checkbox">
+                    <label for="bpemrograman2">CSS</label><br>
+                    <input type="checkbox">
+                    <label for="bpemrograman3">Javascript</label><br><br>
+                    <input type="checkbox">
+                    <label for="bpemrograman4">Golang</label><br>
+                    <input type="checkbox">
+                    <label for="bpemrograman5">PHP</label><br>
+                    <input type="checkbox">
+                    <label for="bpemrograman6">Ruby</label><br>
+                </div>
+
+                <div class="btn-form">
+                    <a href="#" class="btn-blue">submit</a>
+                    <a href="#" class="btn-green">Clear</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
