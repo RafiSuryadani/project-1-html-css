@@ -22,6 +22,9 @@
                 <a href="#" class="btn-primary">hobi</a>
                 <a href="#" class="btn-primary">kontak</a>
             </div>
+            <div class="mobile-button">
+                <a href="#">Menu</a>
+            </div>
         </div>
     </div>
 
@@ -40,12 +43,13 @@
     <div class="media">
         <div class="container">
             <div class="media-item">
-                <img src="assets/julia-zyablova-wFGEUxMhRPo-unsplash.jpg" />
+                <!-- <img src="assets/julia-zyablova-wFGEUxMhRPo-unsplash.jpg" /> -->
                 <!-- <video controls>
                     <sources src="assets/mov_bbb.mp4" type="video/mp4">
                 </video> -->
-                <iframe width="70%" height="560" src="https://www.youtube.com/embed/w6VZky--yRg?si=_MNiBTdEjKVKFlog"
-                    title="YouTube video player" frameborder="0"
+                <iframe class="media-video" width="70%" height="560"
+                    src="https://www.youtube.com/embed/w6VZky--yRg?si=_MNiBTdEjKVKFlog" title="YouTube video player"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
@@ -122,54 +126,61 @@
     </div>
 
     <div class="form-kontak">
-        <div class="container">
+        <div class="container cont-medium">
             <h2>Get Connection</h2>
             <form>
-                <div class="isi-form">
+                <div class="group-form">
                     <label for="nama">Nama:</label><br>
-                    <input type="text" id="nama" name="nama" placeholder="Isikan dengan nama lengkap">
+                    <input class="form-input" type="text" placeholder="Isikan dengan nama lengkap">
                 </div>
-                <div class="isi-form">
+                <div class="group-form">
                     <label for="nama">Email:</label><br>
-                    <input type="text" id="email" name="email" placeholder="Email perusahaan">
+                    <input class="form-input" type="text" placeholder="Email perusahaan">
                 </div>
-                <div class="isi-form">
+                <div class="group-form">
                     <label for="nama">Company:</label><br>
-                    <input type="text" id="company" name="company"><br>
+                    <input class="form-input" type="text"><br>
                 </div>
-                <div class="isi-form">
+                <div class="group-form">
                     <label for="jadwal-meeting">Pilih jadwl meeting:</label><br>
-                    <input type="date" id="jadwal-meeting" name="jadwal-meeting"><br>
+                    <input class="form-input" type="date"><br>
                 </div>
-                <div class="isi-form">
+                <div class="group-form">
                     <label for="jenis-meeting">Pilih Jenis meeting</label><br>
-                    <select name="jenis-meeting" id="jenis-meeting">
+                    <select class="form-input">
                         <option value="online">online</option>
                         <option value="offline">offline</option>
                     </select>
                 </div>
-                <div class="isi-form">
+                <div class="group-form">
                     <label for="pesan">pesan</label><br>
-                    <textarea id="pesan" name="pesan" style="width: 100%;"></textarea>
+                    <textarea class="form-input" style="height: 180px "></textarea>
                 </div>
 
                 <div class="checkbox">
-                    <input type="checkbox">
-                    <label for="bpemrograman1">HTML</label><br>
-                    <input type="checkbox">
-                    <label for="bpemrograman2">CSS</label><br>
-                    <input type="checkbox">
-                    <label for="bpemrograman3">Javascript</label><br><br>
-                    <input type="checkbox">
-                    <label for="bpemrograman4">Golang</label><br>
-                    <input type="checkbox">
-                    <label for="bpemrograman5">PHP</label><br>
-                    <input type="checkbox">
-                    <label for="bpemrograman6">Ruby</label><br>
+                    <div class="group-form">
+                        <p>Frontend</p><br>
+                        <input type="radio" name="skill_1">
+                        <label>HTML</label><br>
+                        <input type="radio" name="skill_1">
+                        <label>CSS</label><br>
+                        <input type="radio" name="skill_1">
+                        <label>Javascript</label><br><br>
+                    </div>
+
+                    <div class="group-form">
+                        <p>Backend</p><br>
+                        <input type="radio" name="skill_2">
+                        <label>Golang</label><br>
+                        <input type="radio" name="skill_2">
+                        <label>PHP</label><br>
+                        <input type="radio" name="skill_2">
+                        <label>Ruby</label><br>
+                    </div>
                 </div>
 
                 <div class="btn-form">
-                    <a href="#" class="btn-blue">submit</a>
+                    <a href="#" class="btn-primary">Submit</a>
                     <a href="#" class="btn-green">Clear</a>
                 </div>
 
